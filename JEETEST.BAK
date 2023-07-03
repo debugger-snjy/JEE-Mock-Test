@@ -1,0 +1,346 @@
+#include<iostream.h>
+
+#include<fstream.h>
+#include<process.h>
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+
+
+
+void test1();
+
+
+void layout_2()
+{
+	clrscr();
+
+	textcolor(WHITE);
+
+	cprintf(" ***************************************************************************** ");cout<<"\n";
+	cprintf("|                                                                             |");cout<<"\n";
+	cprintf("|        J E E     M A I N S     M O C K     T E S T S     O N L I N E        |");cout<<"\n";
+	cprintf("|       ~~~~~~~   ~~~~~~~~~~~   ~~~~~~~~~   ~~~~~~~~~~~   ~~~~~~~~~~~~~       |");cout<<"\n";
+	cprintf(" *****************************************************************************");cout<<"\n";
+
+
+}
+
+void test()
+{
+ //	clrscr();
+	layout_2();
+
+	cprintf("|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~|");cout<<"\n";
+	cprintf("|                *** QUESTION ***                  |   1    2    3    4    5  |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |   6    7    8    9   10  |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |  11   12   13   14   15  |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |  16   17   18   19   20  |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |  21   22   23   24   25  |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |           EXIT           |");cout<<"\n";
+	cprintf("|                                                  |    (Press Esc To Exit)   |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |          SUBMIT          |");cout<<"\n";
+	cprintf("|                                                  | (Press ctrl+D To Submit) |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf("|                                                  |                          |");cout<<"\n";
+	cprintf(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      //	getch();
+
+}
+
+void blink_question(int Q_no)
+{
+	int x,y;
+     //	test();
+
+	textcolor(YELLOW+BLINK);
+
+	if(Q_no==1 || Q_no==6 || Q_no==11 || Q_no==16 || Q_no==21)
+	{
+		x=55;
+
+		if(Q_no==1)
+		{
+			y=7;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==6)
+		{
+			y=9;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==11)
+		{
+			y=11;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==16)
+		{
+			y=13;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==21)
+		{
+			y=15;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+	}
+	else if(Q_no==2 || Q_no==7 || Q_no==12 || Q_no==17 || Q_no==22)
+	{
+		x=60;
+
+		if(Q_no==2)
+		{
+			y=7;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==7)
+		{
+			y=9;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==12)
+		{
+			y=11;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==17)
+		{
+			y=13;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==22)
+		{
+			y=15;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+
+	}
+	else if(Q_no==3 || Q_no==8 || Q_no==13 || Q_no==18 || Q_no==23)
+	{
+
+		x=65;
+
+		if(Q_no==3)
+		{
+			y=7;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==8)
+		{
+			y=9;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==13)
+		{
+			y=11;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==18)
+		{
+			y=13;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==23)
+		{
+			y=15;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+	}
+	else if(Q_no==4 || Q_no==9 || Q_no==14 || Q_no==19 || Q_no==24)
+	{
+		x=70;
+
+		if(Q_no==4)
+		{
+			y=7;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==9)
+		{
+			y=9;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==14)
+		{
+			y=11;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==19)
+		{
+			y=13;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==24)
+		{
+			y=15;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+	}
+	else if(Q_no==5 || Q_no==10 || Q_no==15 || Q_no==20 || Q_no==25)
+	{
+		x=75;
+
+		if(Q_no==5)
+		{
+			y=7;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==10)
+		{
+			y=9;
+			gotoxy(x,y);
+			cprintf(" ");
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==15)
+		{
+			y=11;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==20)
+		{
+			y=13;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+		if(Q_no==25)
+		{
+			y=15;
+			gotoxy(x,y);
+			cprintf("%d",Q_no);
+		}
+	}
+	textcolor(WHITE);
+}
+
+
+void Questions()
+{
+	char user_ans[30];
+
+	char str[80];
+
+	int u=0,Ques=0,T_Ques=0;
+
+	ifstream file;
+
+	file.open("Jee_ques.txt",ios::in);
+
+	int i=9;
+
+
+	while(!file.eof())
+	{
+		textcolor(WHITE);
+
+		file.getline(str,80);
+
+		if(str[strlen(str)-1]=='#')
+		{
+
+			gotoxy(3,i);
+			for(int j=0;j<strlen(str)-1;j++)
+			{
+				cprintf("%c",str[j]);
+			}
+
+			Ques++;
+			T_Ques=Ques;
+			blink_question(Ques);
+
+			//getch();
+
+			gotoxy(5,21);
+			textcolor(YELLOW);
+			cprintf("Enter Your Choice:");
+
+			cin>>user_ans[u];
+			u++;
+
+
+
+			clrscr();
+			test();
+			i=9;
+		}
+		else
+		{
+			gotoxy(3,i);
+			cprintf("%s",str);
+			i++;
+		}
+
+	}
+	getch();
+}
+void result()
+{
+	clrscr();
+	layout_2();
+	cprintf("|~~~~~~|~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~| |~~~~~~|~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~|");cout<<"\n";
+	cprintf("| Q_no | Your Answer | Correct Answer | | Q_no | Your Answer | Correct Answer |");cout<<"\n";
+	cprintf("|~~~~~~|~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~| |~~~~~~|~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~|");cout<<"\n";
+	cprintf("|   1  |             |                | |  16  |             |                |");cout<<"\n";
+	cprintf("|   2  |             |                | |  17  |             |                |");cout<<"\n";
+	cprintf("|   3  |             |                | |  18  |             |                |");cout<<"\n";
+	cprintf("|   4  |             |                | |  19  |             |                |");cout<<"\n";
+	cprintf("|   5  |             |                | |  20  |             |                |");cout<<"\n";
+	cprintf("|   6  |             |                | |  21  |             |                |");cout<<"\n";
+	cprintf("|   7  |             |                | |  22  |             |                |");cout<<"\n";
+	cprintf("|   8  |             |                | |  23  |             |                |");cout<<"\n";
+	cprintf("|   9  |             |                | |  24  |             |                |");cout<<"\n";
+	cprintf("|  10  |             |                | |  25  |             |                |");cout<<"\n";
+	cprintf("|  11  |             |                | |      |             |                |");cout<<"\n";
+	cprintf("|  12  |             |                | |      |             |                |");cout<<"\n";
+	cprintf("|  13  |             |                | |      |             |                |");cout<<"\n";
+	cprintf("|  14  |             |                | |      |             |                |");cout<<"\n";
+	cprintf("|  15  |             |                | |      |             |                |");cout<<"\n";
+	cprintf("|      |             |                | |      |             |                |");cout<<"\n";
+	cprintf(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+}
+void physics_test()
+{
+	test();
+	Questions();
+	result();
+	getch();
+}
